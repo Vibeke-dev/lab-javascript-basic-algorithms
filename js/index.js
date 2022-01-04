@@ -69,7 +69,8 @@ for (let i=0; i<=loremIpsum.length; i++){
 }
 
 let j=0;
-
+//.indexOf(substr) returns the index where a particular character/substring occurs. 
+//If the substring was not found, it returns -1.
 while (loremIpsum.indexOf(' et ', j)>=0){
     j=loremIpsum.indexOf(' et ', j)+1;
     numberOfEt++;
