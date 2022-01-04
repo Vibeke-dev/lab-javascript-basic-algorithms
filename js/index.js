@@ -11,16 +11,17 @@ console.log(`The navigators name is ${hacker3}`);
 
 // Iteration 2: Conditionals
 if (hacker1.length > hacker2.length){
-    console.log("hacker1 has the longest name");
+    console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
 }
 else if (hacker1.length < hacker2.length) {
-    console.log("hacker2 has the longest name");
+    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
 }
 else{
-    console.log("hacker1 and hacker2 has the same length");
+    console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`);
 }
 
 // Iteration 3: Loops
+//3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "J O H N"
 let tempHacker1 = "";
 
 for(let i = 0; i < hacker1.length; i++)
@@ -30,6 +31,7 @@ for(let i = 0; i < hacker1.length; i++)
 
 console.log(tempHacker1.toUpperCase());
 
+//3.2 Print all the characters of the navigator's name, in reverse order. i.e. "nhoJ"
 let tempHacker2 = "";
 
 for(let i = hacker2.length-1; i >= 0; i--)
@@ -39,6 +41,7 @@ for(let i = hacker2.length-1; i >= 0; i--)
 
 console.log(tempHacker2);
 
+//3.3 Depending on the lexicographic order of the strings, print:
 if (hacker1.localeCompare(hacker2)===-1){
     console.log("The driver's name goes first.");
 }
